@@ -129,12 +129,12 @@ set background=light " When set to "dark", Vim will try to use colors that look
  
 set mouse=a         " Enable the use of the mouse.
  
-execute pathogen#infect()
-filetype plugin indent on
+" execute pathogen#infect()
 syntax on
-cd /Volumes/Macintosh\ HD\ 2/Projects
 
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-Z>'             " redefine trigger key to 'ctrl z ,'
 autocmd FileType html,php,css,scss,js EmmetInstall  " enable just for html/php/css/scss/js/
+
+cd /Volumes/Macintosh\ HD\ 2/Projects
 
