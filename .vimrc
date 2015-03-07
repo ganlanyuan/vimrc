@@ -26,13 +26,21 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugins
 " github ---------------------------------
-Bundle 'mattn/emmet-vim'
+" directory
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/mru.vim'
+
+" helper
+Bundle 'mattn/emmet-vim'
 
 " color schemes
 Bundle '29decibel/codeschool-vim-theme'
-" Bundle 'altercation/vim-colors-solarized'
-" Bundle 'trusktr/seti.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'trusktr/seti.vim'
+
+" setting
+Bundle 'othree/html5.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -113,6 +121,8 @@ set background=light " When set to "dark", Vim will try to use colors that look
                     " try to use colors that look good on a light background.
                     " Any other value is illegal.
 set mouse=a         " Enable the use of the mouse.
+" execute pathogen#infect()
+syntax on
 
 
 " -------------- mapping -------------- 
@@ -126,17 +136,20 @@ map  ss :source ~/.vimrc
 map  ee :e ~/.vimrc
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc 
+
+
+" -------------- nerdtree -------------- 
+"toggle nerdtree
+nnoremap <F5> :NERDTreeToggle<cr>
 autocmd vimenter * NERDTree
-" execute pathogen#infect()
-syntax on
 
 
 " -------------- color theme -------------- 
 syntax enable
 set background=dark
+color codeschool
 "color solarized
 "color seti
-color codeschool
 
 
 " -------------- emmet -------------- 
