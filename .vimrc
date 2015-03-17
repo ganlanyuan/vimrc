@@ -153,6 +153,5 @@ color codeschool
 
 
 " -------------- emmet -------------- 
-let g:user_emmet_install_global = 0
+let g:user_emmet_mode='a'               " enable all function in all mode.
 let g:user_emmet_leader_key='<C-Z>'             " redefine trigger key to 'ctrl z ,'
-autocmd FileType html,php,css,scss,js EmmetInstall  " enable just for html/php/css/scss/js/
