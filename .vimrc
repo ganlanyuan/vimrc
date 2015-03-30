@@ -100,7 +100,7 @@ set autoindent      " Copy indent from current line when starting a new line
 set autowrite       " auto save file when open a new file.
 set autochdir       " auto change working directory based on current opening file.
 
-"set textwidth=79    " Maximum width of text that is being inserted. A longer
+" set textwidth=79    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
 set formatoptions=c,q,r,t " This is a sequence of letters which describes how
                     " automatic formatting is to be done.
@@ -142,6 +142,7 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 "toggle nerdtree
 nnoremap <F5> :NERDTreeToggle<cr>
 autocmd vimenter * NERDTree
+let g:NERDTreeWinSize = 22
 
 
 " -------------- color theme -------------- 
