@@ -127,6 +127,7 @@ set background=light " When set to "dark", Vim will try to use colors that look
                     " Any other value is illegal.
 set mouse=a         " Enable the use of the mouse.
 set shortmess+=A    " A don't give the 'ATTENTION' message when an existing swap file is found.
+set noswapfile      " Disable VIM to create swap file
 " execute pathogen#infect()
 syntax on
 
