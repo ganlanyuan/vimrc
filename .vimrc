@@ -29,6 +29,7 @@ Plugin 'gmarik/Vundle.vim'
 " directory
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/mru.vim'
 
 " helper
@@ -36,8 +37,12 @@ Bundle 'mattn/emmet-vim'
 
 " color schemes
 Bundle '29decibel/codeschool-vim-theme'
+Bundle 'flazz/vim-colorschemes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'trusktr/seti.vim'
+
+" language
+"Bundle 'pangloss/vim-javascript'
 
 " setting
 Bundle 'othree/html5.vim'
@@ -148,9 +153,23 @@ let g:NERDTreeWinSize = 22
 " -------------- color theme -------------- 
 syntax enable
 set background=dark
-color codeschool
+
+" /// light themes ///
+"color summerfruit
+"color taqua
+"color oceanlight
+"color pyte
+
+" /// dark themes ///
+"color busybee
+color underwater
+"color codeschool
 "color solarized
 "color seti
+"color ir_black
+"color jelleybeans
+"color wombat
+"color phd
 
 
 " -------------- emmet -------------- 
