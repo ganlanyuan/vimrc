@@ -83,12 +83,12 @@ set smarttab        " When on, a <Tab> in front of a line inserts blanks
                     " at the start of the line.
 set showcmd         " Show (partial) command in status line.
 set number          " Show line numbers.
-set guifont=Courier\ New:h20  "Font size.
+set guifont=Courier\ New:h18  "Font size.
 set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " one. The jump is only done if the match can be seen on the
                     " screen. The time to show the match can be set with
                     " 'matchtime'.
-set hlsearch        " When there is a previous search pattern, highlight all
+set nohlsearch        " When there is a previous search pattern, highlight all
                     " its matches.
 set incsearch       " While typing a search command, show immediately where the
                     " so far typed pattern matches.
