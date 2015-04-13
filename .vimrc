@@ -31,9 +31,12 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/mru.vim'
+Bundle 'terryma/vim-multiple-cursors'
 
 " helper
 Bundle 'mattn/emmet-vim'
+Bundle 'jiangmiao/auto-pairs'
+Bundle '907th/vim-auto-save'
 
 " color schemes
 Bundle '29decibel/codeschool-vim-theme'
@@ -151,6 +154,12 @@ nnoremap <F5> :NERDTreeToggle<cr>
 autocmd vimenter * NERDTree
 let g:NERDTreeWinSize = 22
 
+
+" -------------- auto save -------------- 
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+let g:auto_save_silent = 1  " do not display the auto-save notification
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
 " -------------- color theme -------------- 
 syntax enable
