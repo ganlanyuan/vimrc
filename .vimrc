@@ -35,7 +35,9 @@ Bundle 'terryma/vim-multiple-cursors'
 
 " helper
 Bundle 'mattn/emmet-vim'
+Bundle 'tpope/vim-repeat'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'tpope/vim-surround'
 Bundle '907th/vim-auto-save'
 
 " color schemes
@@ -131,6 +133,8 @@ set background=light " When set to "dark", Vim will try to use colors that look
 set mouse=a         " Enable the use of the mouse.
 set shortmess+=A    " A don't give the 'ATTENTION' message when an existing swap file is found.
 set noswapfile      " Disable VIM to create swap file
+" set scrolljump=5
+" set scrolloff=3
 " execute pathogen#infect()
 syntax on
 
