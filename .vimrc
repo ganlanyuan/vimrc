@@ -38,7 +38,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-surround'
-Bundle '907th/vim-auto-save'
+" Bundle '907th/vim-auto-save'
 
 " color schemes
 Bundle '29decibel/codeschool-vim-theme'
@@ -109,6 +109,7 @@ set autoindent      " Copy indent from current line when starting a new line
                     " command).
 set autowrite       " auto save file when open a new file.
 set autochdir       " auto change working directory based on current opening file.
+set autoread        " auto reload file on change
 
 " set textwidth=79    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
@@ -160,10 +161,10 @@ let g:NERDTreeWinSize = 22
 
 
 " -------------- auto save -------------- 
-let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
-let g:auto_save_silent = 1  " do not display the auto-save notification
-let g:auto_save_events = ["InsertLeave", "TextChanged"]
+" let g:auto_save = 1  " enable AutoSave on Vim startup
+" let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+" let g:auto_save_silent = 1  " do not display the auto-save notification
+" let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
 " -------------- color theme -------------- 
 syntax enable
