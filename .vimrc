@@ -38,7 +38,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-surround'
-" Bundle '907th/vim-auto-save'
+Bundle '907th/vim-auto-save'
 
 " color schemes
 Bundle '29decibel/codeschool-vim-theme'
@@ -161,10 +161,10 @@ let g:NERDTreeWinSize = 22
 
 
 " -------------- auto save -------------- 
-" let g:auto_save = 1  " enable AutoSave on Vim startup
-" let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
-" let g:auto_save_silent = 1  " do not display the auto-save notification
-" let g:auto_save_events = ["InsertLeave", "TextChanged"]
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+let g:auto_save_silent = 1  " do not display the auto-save notification
+let g:auto_save_events = ['TextChanged']  " other options: 'InsertLeave', 'CursorHold' 
 
 " -------------- color theme -------------- 
 syntax enable
